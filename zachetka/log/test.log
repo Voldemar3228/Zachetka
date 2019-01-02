@@ -1,0 +1,1346 @@
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_should_get_output
+----------------------------------------------------
+Started GET "/main_controller/output" for 127.0.0.1 at 2018-12-12 01:05:55 +0300
+Processing by MainControllerController#output as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+MainControllerControllerTest: test_should_get_input
+---------------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+MainControllerControllerTest: test_test_square_11
+-------------------------------------------------
+Started GET "/main_controller/output?v1=11" for 127.0.0.1 at 2018-12-12 01:05:55 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"v1"=>"11"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------
+MainControllerControllerTest: test_should_get_error_for_incorrect_params
+------------------------------------------------------------------------
+Started GET "/main_controller/output?v1=test_string" for 127.0.0.1 at 2018-12-12 01:05:55 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"v1"=>"test_string"}
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+MainControllerControllerTest: test_should_get_input
+---------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_should_get_output
+----------------------------------------------------
+Started GET "/main_controller/output" for 127.0.0.1 at 2018-12-12 01:40:15 +0300
+Processing by MainControllerController#output as HTML
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-12-11 22:47:38.050101"], ["updated_at", "2018-12-11 22:47:38.050101"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+MainControllerControllerTest: test_should_get_input
+---------------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_should_get_output
+----------------------------------------------------
+Started GET "/main_controller/output" for 127.0.0.1 at 2018-12-12 01:47:38 +0300
+Processing by MainControllerController#output as HTML
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-12-11 23:04:50.749364"], ["updated_at", "2018-12-11 23:04:50.749364"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_should_get_output
+----------------------------------------------------
+Started GET "/main_controller/output" for 127.0.0.1 at 2018-12-12 02:04:50 +0300
+Processing by MainControllerController#output as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+MainControllerControllerTest: test_should_get_input
+---------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2018-12-12 02:04:51 +0300
+Processing by MainControllerController#input as HTML
+  Rendering main_controller/input.html.erb within layouts/application
+  Rendered main_controller/input.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 492ms (Views: 487.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-12-11 23:07:46.157231"], ["updated_at", "2018-12-11 23:07:46.157231"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+MainControllerControllerTest: test_should_get_input
+---------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2018-12-12 02:07:46 +0300
+Processing by MainControllerController#input as HTML
+  Rendering main_controller/input.html.erb within layouts/application
+  Rendered main_controller/input.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 212ms (Views: 193.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_should_get_output
+----------------------------------------------------
+Started GET "/main_controller/output?text=11" for 127.0.0.1 at 2018-12-12 02:07:46 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"11"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-12-11 23:08:30.153715"], ["updated_at", "2018-12-11 23:08:30.153715"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_should_get_output
+----------------------------------------------------
+Started GET "/main_controller/output?text=11" for 127.0.0.1 at 2018-12-12 02:08:30 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"11"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 190ms (Views: 171.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------
+MainControllerControllerTest: test_test_square_11
+-------------------------------------------------
+Started GET "/main_controller/output?text=11" for 127.0.0.1 at 2018-12-12 02:08:30 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"11"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------------------------------
+MainControllerControllerTest: test_should_get_error_for_incorrect_params
+------------------------------------------------------------------------
+Started GET "/main_controller/output?text=test_string" for 127.0.0.1 at 2018-12-12 02:08:30 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"test_string"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+MainControllerControllerTest: test_should_get_input
+---------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2018-12-12 02:08:30 +0300
+Processing by MainControllerController#input as HTML
+  Rendering main_controller/input.html.erb within layouts/application
+  Rendered main_controller/input.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-12-11 23:18:25.135823"], ["updated_at", "2018-12-11 23:18:25.135823"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+MainControllerControllerTest: test_should_get_input
+---------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2018-12-12 02:18:25 +0300
+Processing by MainControllerController#input as HTML
+  Rendering main_controller/input.html.erb within layouts/application
+  Rendered main_controller/input.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 169ms (Views: 151.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_should_get_output
+----------------------------------------------------
+Started GET "/main_controller/output?text=11" for 127.0.0.1 at 2018-12-12 02:18:25 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"11"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+MainControllerControllerTest: test_test_random_number
+-----------------------------------------------------
+Started GET "/main_controller/output?text=7" for 127.0.0.1 at 2018-12-12 02:18:25 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"7"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-12-11 23:19:58.751656"], ["updated_at", "2018-12-11 23:19:58.751656"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+MainControllerControllerTest: test_should_get_input
+---------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2018-12-12 02:19:58 +0300
+Processing by MainControllerController#input as HTML
+  Rendering main_controller/input.html.erb within layouts/application
+  Rendered main_controller/input.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 165ms (Views: 145.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_should_get_output
+----------------------------------------------------
+Started GET "/main_controller/output?text=11" for 127.0.0.1 at 2018-12-12 02:19:59 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"11"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+MainControllerControllerTest: test_test_random_number
+-----------------------------------------------------
+Started GET "/main_controller/output?text=7" for 127.0.0.1 at 2018-12-12 02:19:59 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"7"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-12-11 23:27:38.218597"], ["updated_at", "2018-12-11 23:27:38.218597"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+MainControllerControllerTest: test_should_get_input
+---------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2018-12-12 02:27:38 +0300
+Processing by MainControllerController#input as HTML
+  Rendering main_controller/input.html.erb within layouts/application
+  Rendered main_controller/input.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 166ms (Views: 146.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_should_get_output
+----------------------------------------------------
+Started GET "/main_controller/output?text=11" for 127.0.0.1 at 2018-12-12 02:27:38 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"11"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 9ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+MainControllerControllerTest: test_test_random_number
+-----------------------------------------------------
+Started GET "/main_controller/output?text=7" for 127.0.0.1 at 2018-12-12 02:27:38 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"7"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-12-11 23:30:43.220771"], ["updated_at", "2018-12-11 23:30:43.220771"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+MainControllerControllerTest: test_test_random_number
+-----------------------------------------------------
+Started GET "/main_controller/output?text=7" for 127.0.0.1 at 2018-12-12 02:30:43 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"7"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 206ms (Views: 186.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+MainControllerControllerTest: test_should_get_input
+---------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2018-12-12 02:30:43 +0300
+Processing by MainControllerController#input as HTML
+  Rendering main_controller/input.html.erb within layouts/application
+  Rendered main_controller/input.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_test_error_string
+----------------------------------------------------
+Started GET "/main_controller/output?text=aabbcc" for 127.0.0.1 at 2018-12-12 02:30:43 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"aabbcc"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_should_get_output
+----------------------------------------------------
+Started GET "/main_controller/output?text=11" for 127.0.0.1 at 2018-12-12 02:30:43 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"11"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-12-11 23:31:19.262593"], ["updated_at", "2018-12-11 23:31:19.262593"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+MainControllerControllerTest: test_test_random_number
+-----------------------------------------------------
+Started GET "/main_controller/output?text=7" for 127.0.0.1 at 2018-12-12 02:31:19 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"7"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 208ms (Views: 189.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+MainControllerControllerTest: test_should_get_input
+---------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2018-12-12 02:31:19 +0300
+Processing by MainControllerController#input as HTML
+  Rendering main_controller/input.html.erb within layouts/application
+  Rendered main_controller/input.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_should_get_output
+----------------------------------------------------
+Started GET "/main_controller/output?text=11" for 127.0.0.1 at 2018-12-12 02:31:19 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"11"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_test_error_string
+----------------------------------------------------
+Started GET "/main_controller/output?text=aabbcc" for 127.0.0.1 at 2018-12-12 02:31:19 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"aabbcc"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_test_empty_digits
+----------------------------------------------------
+Started GET "/main_controller/output?text=3" for 127.0.0.1 at 2018-12-12 02:31:19 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"3"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-12-11 23:31:45.109274"], ["updated_at", "2018-12-11 23:31:45.109274"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_test_empty_digits
+----------------------------------------------------
+Started GET "/main_controller/output?text=2" for 127.0.0.1 at 2018-12-12 02:31:45 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"2"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 176ms (Views: 157.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_test_error_string
+----------------------------------------------------
+Started GET "/main_controller/output?text=aabbcc" for 127.0.0.1 at 2018-12-12 02:31:45 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"aabbcc"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+MainControllerControllerTest: test_test_random_number
+-----------------------------------------------------
+Started GET "/main_controller/output?text=7" for 127.0.0.1 at 2018-12-12 02:31:45 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"7"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+MainControllerControllerTest: test_should_get_input
+---------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2018-12-12 02:31:45 +0300
+Processing by MainControllerController#input as HTML
+  Rendering main_controller/input.html.erb within layouts/application
+  Rendered main_controller/input.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_should_get_output
+----------------------------------------------------
+Started GET "/main_controller/output?text=11" for 127.0.0.1 at 2018-12-12 02:31:45 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"11"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-12-11 23:32:17.536216"], ["updated_at", "2018-12-11 23:32:17.536216"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_should_get_output
+----------------------------------------------------
+Started GET "/main_controller/output?text=11" for 127.0.0.1 at 2018-12-12 02:32:17 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"11"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 184ms (Views: 165.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_test_error_string
+----------------------------------------------------
+Started GET "/main_controller/output?text=aabbcc" for 127.0.0.1 at 2018-12-12 02:32:17 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"aabbcc"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------------
+MainControllerControllerTest: test_test_number_with_more_find
+-------------------------------------------------------------
+Started GET "/main_controller/output?text=34" for 127.0.0.1 at 2018-12-12 02:32:17 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"34"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------------
+MainControllerControllerTest: test_test_number_with_1_find
+----------------------------------------------------------
+Started GET "/main_controller/output?text=7" for 127.0.0.1 at 2018-12-12 02:32:17 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"7"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+MainControllerControllerTest: test_should_get_input
+---------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2018-12-12 02:32:17 +0300
+Processing by MainControllerController#input as HTML
+  Rendering main_controller/input.html.erb within layouts/application
+  Rendered main_controller/input.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_test_empty_digits
+----------------------------------------------------
+Started GET "/main_controller/output?text=2" for 127.0.0.1 at 2018-12-12 02:32:17 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"2"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (0)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-12-11 23:32:33.759555"], ["updated_at", "2018-12-11 23:32:33.759555"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_should_get_output
+----------------------------------------------------
+Started GET "/main_controller/output?text=11" for 127.0.0.1 at 2018-12-12 02:32:33 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"11"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 187ms (Views: 168.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_test_empty_digits
+----------------------------------------------------
+Started GET "/main_controller/output?text=2" for 127.0.0.1 at 2018-12-12 02:32:34 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"2"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------------------------
+MainControllerControllerTest: test_test_number_with_more_find
+-------------------------------------------------------------
+Started GET "/main_controller/output?text=34" for 127.0.0.1 at 2018-12-12 02:32:34 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"34"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------------
+MainControllerControllerTest: test_test_number_with_1_find
+----------------------------------------------------------
+Started GET "/main_controller/output?text=7" for 127.0.0.1 at 2018-12-12 02:32:34 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"7"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+MainControllerControllerTest: test_should_get_input
+---------------------------------------------------
+Started GET "/" for 127.0.0.1 at 2018-12-12 02:32:34 +0300
+Processing by MainControllerController#input as HTML
+  Rendering main_controller/input.html.erb within layouts/application
+  Rendered main_controller/input.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+MainControllerControllerTest: test_test_error_string
+----------------------------------------------------
+Started GET "/main_controller/output?text=aabbcc" for 127.0.0.1 at 2018-12-12 02:32:34 +0300
+Processing by MainControllerController#output as HTML
+  Parameters: {"text"=>"aabbcc"}
+  Rendering main_controller/output.html.erb within layouts/application
+  Rendered main_controller/output.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+PalsControllerTest: test_should_redirect_to_log_in
+--------------------------------------------------
+Started GET "/pals/input?v1=10" for 127.0.0.1 at 2018-12-13 03:52:23 +0300
+Processing by PalsController#input as HTML
+  Parameters: {"v1"=>"10"}
+Completed 401 Unauthorized in 29ms (ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-13 03:52:23 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (1.7ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 4876ms (Views: 4863.3ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------
+PalTest: test_should_find_pal
+-----------------------------
+  [1m[36mPal Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PalTest: test_shoud_not_save_with_save_fields
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+PalTest: test_should_not_create_pal
+-----------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------
+PalTest: test_should_find_pal
+-----------------------------
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PalTest: test_shoud_not_save_with_save_fields
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+PalTest: test_should_not_create_pal
+-----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+PalsControllerTest: test_should_redirect_to_log_in
+--------------------------------------------------
+Started GET "/pals/input?v1=10" for 127.0.0.1 at 2018-12-13 03:54:43 +0300
+Processing by PalsController#input as HTML
+  Parameters: {"v1"=>"10"}
+Completed 401 Unauthorized in 28ms (ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-13 03:54:43 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 199ms (Views: 187.4ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PalTest: test_shoud_not_save_with_save_fields
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "1"], ["LIMIT", 1]]
+  [1m[36mPal Create (0.9ms)[0m  [1m[32mINSERT INTO "pals" ("count", "res", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["count", "1"], ["res", "{\"1\":\"1\"}"], ["created_at", "2018-12-18 07:09:30.074167"], ["updated_at", "2018-12-18 07:09:30.074167"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------
+PalTest: test_should_find_pal
+-----------------------------
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+PalTest: test_should_not_create_pal
+-----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+PalsControllerTest: test_should_redirect_to_log_in
+--------------------------------------------------
+Started GET "/pals/input?v1=10" for 127.0.0.1 at 2018-12-18 10:09:30 +0300
+Processing by PalsController#input as HTML
+  Parameters: {"v1"=>"10"}
+Completed 401 Unauthorized in 28ms (ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-18 10:09:30 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 358ms (Views: 345.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+PalsControllerTest: test_should_redirect_to_log_in
+--------------------------------------------------
+Started GET "/pals/input?v1=10" for 127.0.0.1 at 2018-12-18 10:11:51 +0300
+Processing by PalsController#input as HTML
+  Parameters: {"v1"=>"10"}
+Completed 401 Unauthorized in 26ms (ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-18 10:11:51 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 233ms (Views: 220.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PalTest: test_shoud_not_save_with_save_fields
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "1"], ["LIMIT", 1]]
+  [1m[36mPal Create (0.3ms)[0m  [1m[32mINSERT INTO "pals" ("count", "res", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["count", "1"], ["res", "{\"1\":\"1\"}"], ["created_at", "2018-12-18 07:11:51.755083"], ["updated_at", "2018-12-18 07:11:51.755083"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------
+PalTest: test_should_find_article
+---------------------------------
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+PalTest: test_should_not_create_pal
+-----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+PalsControllerTest: test_should_redirect_to_log_in
+--------------------------------------------------
+Started GET "/pals/input?v1=10" for 127.0.0.1 at 2018-12-18 10:13:47 +0300
+Processing by PalsController#input as HTML
+  Parameters: {"v1"=>"10"}
+Completed 401 Unauthorized in 38ms (ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-18 10:13:47 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (2.2ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 278ms (Views: 264.3ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+PalTest: test_should_not_create_pal
+-----------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PalTest: test_shoud_not_save_with_save_fields
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "1"], ["LIMIT", 1]]
+  [1m[36mPal Create (0.6ms)[0m  [1m[32mINSERT INTO "pals" ("count", "res", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["count", "1"], ["res", "{\"1\":\"1\"}"], ["created_at", "2018-12-18 07:13:47.590259"], ["updated_at", "2018-12-18 07:13:47.590259"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------
+PalTest: test_should_find_article
+---------------------------------
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Яблоко"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+PalsControllerTest: test_should_redirect_to_log_in
+--------------------------------------------------
+Started GET "/pals/input?v1=10" for 127.0.0.1 at 2018-12-18 10:14:17 +0300
+Processing by PalsController#input as HTML
+  Parameters: {"v1"=>"10"}
+Completed 401 Unauthorized in 28ms (ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-18 10:14:17 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 260ms (Views: 245.6ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PalTest: test_shoud_not_save_with_save_fields
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "1"], ["LIMIT", 1]]
+  [1m[36mPal Create (0.7ms)[0m  [1m[32mINSERT INTO "pals" ("count", "res", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["count", "1"], ["res", "{\"1\":\"1\"}"], ["created_at", "2018-12-18 07:14:18.049200"], ["updated_at", "2018-12-18 07:14:18.049200"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------
+PalTest: test_should_find_article
+---------------------------------
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Яблоко"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+PalTest: test_should_not_create_pal
+-----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+PalsControllerTest: test_should_redirect_to_log_in
+--------------------------------------------------
+Started GET "/pals/input?v1=10" for 127.0.0.1 at 2018-12-18 10:14:49 +0300
+Processing by PalsController#input as HTML
+  Parameters: {"v1"=>"10"}
+Completed 401 Unauthorized in 26ms (ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-18 10:14:49 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 274ms (Views: 261.1ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PalTest: test_shoud_not_save_with_save_fields
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Франция"], ["LIMIT", 1]]
+  [1m[36mPal Create (0.6ms)[0m  [1m[32mINSERT INTO "pals" ("count", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["count", "Франция"], ["created_at", "2018-12-18 07:14:49.846576"], ["updated_at", "2018-12-18 07:14:49.846576"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+PalTest: test_should_not_create_pal
+-----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------
+PalTest: test_should_find_article
+---------------------------------
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Яблоко"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+PalsControllerTest: test_should_redirect_to_log_in
+--------------------------------------------------
+Started GET "/pals/input?v1=10" for 127.0.0.1 at 2018-12-18 10:17:05 +0300
+Processing by PalsController#input as HTML
+  Parameters: {"v1"=>"10"}
+Completed 401 Unauthorized in 26ms (ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-18 10:17:05 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 267ms (Views: 254.7ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+PalsControllerTest: test_should_find_user
+-----------------------------------------
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["email", "test@mail.ru"], ["password", "123456"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PalTest: test_shoud_not_save_with_save_fields
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Франция"], ["LIMIT", 1]]
+  [1m[36mPal Create (1.1ms)[0m  [1m[32mINSERT INTO "pals" ("count", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["count", "Франция"], ["created_at", "2018-12-18 07:17:05.633481"], ["updated_at", "2018-12-18 07:17:05.633481"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------
+PalTest: test_should_find_article
+---------------------------------
+  [1m[36mPal Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Яблоко"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+PalTest: test_should_not_create_pal
+-----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+PalsControllerTest: test_should_redirect_to_log_in
+--------------------------------------------------
+Started GET "/pals/input?v1=10" for 127.0.0.1 at 2018-12-18 10:18:59 +0300
+Processing by PalsController#input as HTML
+  Parameters: {"v1"=>"10"}
+Completed 401 Unauthorized in 26ms (ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-18 10:18:59 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 235ms (Views: 222.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------
+UserTest: test_should_find_user
+-------------------------------
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."encrypted_password" = ? LIMIT ?[0m  [["email", "test@mail.ru"], ["encrypted_password", "123456"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PalTest: test_shoud_not_save_with_save_fields
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Франция"], ["LIMIT", 1]]
+  [1m[36mPal Create (0.3ms)[0m  [1m[32mINSERT INTO "pals" ("count", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["count", "Франция"], ["created_at", "2018-12-18 07:18:59.406485"], ["updated_at", "2018-12-18 07:18:59.406485"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------
+PalTest: test_should_find_article
+---------------------------------
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Яблоко"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+PalTest: test_should_not_create_pal
+-----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------
+UserTest: test_should_find_user
+-------------------------------
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."encrypted_password" = ? LIMIT ?[0m  [["email", "test@mail.ru"], ["encrypted_password", "123456"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PalTest: test_shoud_not_save_with_save_fields
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Франция"], ["LIMIT", 1]]
+  [1m[36mPal Create (0.5ms)[0m  [1m[32mINSERT INTO "pals" ("count", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["count", "Франция"], ["created_at", "2018-12-18 07:19:11.508600"], ["updated_at", "2018-12-18 07:19:11.508600"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------
+PalTest: test_should_find_article
+---------------------------------
+  [1m[36mPal Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Яблоко"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+PalTest: test_should_not_create_pal
+-----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+PalsControllerTest: test_should_redirect_to_log_in
+--------------------------------------------------
+Started GET "/pals/input?v1=10" for 127.0.0.1 at 2018-12-18 10:19:11 +0300
+Processing by PalsController#input as HTML
+  Parameters: {"v1"=>"10"}
+Completed 401 Unauthorized in 26ms (ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-18 10:19:11 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (1.6ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 249ms (Views: 238.1ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------
+UserTest: test_should_find_user
+-------------------------------
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."encrypted_password" = ? LIMIT ?[0m  [["email", "test@mail.ru"], ["encrypted_password", "123456"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+PalsControllerTest: test_should_redirect_to_log_in
+--------------------------------------------------
+Started GET "/pals/input?v1=10" for 127.0.0.1 at 2018-12-18 10:19:22 +0300
+Processing by PalsController#input as HTML
+  Parameters: {"v1"=>"10"}
+Completed 401 Unauthorized in 26ms (ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-18 10:19:22 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 242ms (Views: 230.2ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PalTest: test_shoud_not_save_with_save_fields
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Франция"], ["LIMIT", 1]]
+  [1m[36mPal Create (0.3ms)[0m  [1m[32mINSERT INTO "pals" ("count", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["count", "Франция"], ["created_at", "2018-12-18 07:19:22.957473"], ["updated_at", "2018-12-18 07:19:22.957473"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------
+PalTest: test_should_find_article
+---------------------------------
+  [1m[36mPal Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Яблоко"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+PalTest: test_should_not_create_pal
+-----------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------
+UserTest: test_should_find_user
+-------------------------------
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."encrypted_password" = ? LIMIT ?[0m  [["email", "test@mail.ru"], ["encrypted_password", "123456"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+PalsControllerTest: test_should_redirect_to_log_in
+--------------------------------------------------
+Started GET "/pals/input?v1=10" for 127.0.0.1 at 2018-12-18 10:48:27 +0300
+Processing by PalsController#input as HTML
+  Parameters: {"v1"=>"10"}
+Completed 401 Unauthorized in 32ms (ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-18 10:48:27 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 387ms (Views: 373.9ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------
+PalTest: test_should_find_article
+---------------------------------
+  [1m[36mPal Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Яблоко"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+PalTest: test_should_not_create_pal
+-----------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PalTest: test_shoud_not_save_with_save_fields
+---------------------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Франция"], ["LIMIT", 1]]
+  [1m[36mPal Create (0.8ms)[0m  [1m[32mINSERT INTO "pals" ("count", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["count", "Франция"], ["created_at", "2018-12-18 07:48:28.313885"], ["updated_at", "2018-12-18 07:48:28.313885"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+PalsControllerTest: test_should_redirect_to_log_in
+--------------------------------------------------
+Started GET "/pals/input?v1=10" for 127.0.0.1 at 2018-12-18 10:49:33 +0300
+Processing by PalsController#input as HTML
+  Parameters: {"v1"=>"10"}
+Completed 401 Unauthorized in 27ms (ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-18 10:49:33 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 261ms (Views: 248.3ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PalTest: test_shoud_not_save_with_save_fields
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Франция"], ["LIMIT", 1]]
+  [1m[36mPal Create (0.6ms)[0m  [1m[32mINSERT INTO "pals" ("count", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["count", "Франция"], ["created_at", "2018-12-18 07:49:34.180054"], ["updated_at", "2018-12-18 07:49:34.180054"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------
+PalTest: test_should_find_article
+---------------------------------
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Яблоко"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+PalTest: test_should_not_create_pal
+-----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------
+UserTest: test_should_find_user
+-------------------------------
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."encrypted_password" = ? LIMIT ?[0m  [["email", "test@mail.ru"], ["encrypted_password", "123456"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+PalsControllerTest: test_should_redirect_to_log_in
+--------------------------------------------------
+Started GET "/pals/input?v1=10" for 127.0.0.1 at 2018-12-18 11:00:39 +0300
+Processing by PalsController#input as HTML
+  Parameters: {"v1"=>"10"}
+Completed 401 Unauthorized in 29ms (ActiveRecord: 0.0ms)
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-18 11:00:40 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"email"=>"test@mail.ru", "password"=>"[FILTERED]"}
+  Rendering /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.3.0/gems/devise-4.5.0/app/views/devise/sessions/new.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 372ms (Views: 359.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+PalTest: test_shoud_not_save_with_save_fields
+---------------------------------------------
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Франция"], ["LIMIT", 1]]
+  [1m[36mPal Create (0.9ms)[0m  [1m[32mINSERT INTO "pals" ("count", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["count", "Франция"], ["created_at", "2018-12-18 08:00:40.444332"], ["updated_at", "2018-12-18 08:00:40.444332"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------
+PalTest: test_should_find_article
+---------------------------------
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" = ? LIMIT ?[0m  [["count", "Яблоко"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+PalTest: test_should_not_create_pal
+-----------------------------------
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPal Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "pals" WHERE "pals"."count" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------
+UserTest: test_should_find_user
+-------------------------------
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."encrypted_password" = ? LIMIT ?[0m  [["email", "test@mail.ru"], ["encrypted_password", "123456"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
